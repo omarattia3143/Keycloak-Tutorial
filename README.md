@@ -35,14 +35,14 @@ docker run -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/
 
 copied from here: https://stackoverflow.com/questions/53550321/keycloak-gatekeeper-aud-claim-and-client-id-do-not-match
 
-#API
+# API
 
 1. add any jwt middleware you like, I have added Microsoft.AspNetCore.Authentication.JwtBearer
 2. consider Authority to be http://localhost:8080/auth/realms/sarmady or your realm name, and Audience is the client name
 
 3. protect your api with [Authorize] attribute
 
-#SsoClient
+# SsoClient
 
 1. install this https://github.com/manfredsteyer/angular-oauth2-oidc or any oidc client 
 2. my configurations in sso.config.ts file:
