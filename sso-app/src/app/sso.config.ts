@@ -2,18 +2,13 @@
 
 export const authCodeFlowConfig: AuthConfig = {
   // Url of the Identity Provider
-  // issuer: 'https://idsvr4.azurewebsites.net',
   issuer: 'http://localhost:8080/auth/realms/sarmady',
-  // issuer: 'https://localhost:7001',
-  // issuer: 'https://15.185.222.48:7001',
 
   // URL of the SPA to redirect the user to after login
   redirectUri: window.location.origin,
-  // redirectUri: 'com.skylabs.carwa  sh',
 
   postLogoutRedirectUri: 'https://google.com/',
 
-  // redirectUri: 'https://localhost:5001/signin-oidc',
 
   // The SPA's id. The SPA is registerd with this id at the auth-server
   // clientId: 'spa',
